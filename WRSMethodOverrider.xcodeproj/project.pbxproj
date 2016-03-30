@@ -10,6 +10,7 @@
 		FCBC785A1CAC0832008EA7D6 /* WRSMethodOverrider.h in Headers */ = {isa = PBXBuildFile; fileRef = FCBC78591CAC0832008EA7D6 /* WRSMethodOverrider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FCBC78611CAC0832008EA7D6 /* WRSMethodOverrider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCBC78561CAC0832008EA7D6 /* WRSMethodOverrider.framework */; };
 		FCBC78661CAC0832008EA7D6 /* WRSMethodOverriderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBC78651CAC0832008EA7D6 /* WRSMethodOverriderTests.m */; };
+		FCBC78711CAC0893008EA7D6 /* WRSMethodOverrider.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBC78701CAC0893008EA7D6 /* WRSMethodOverrider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		FCBC78601CAC0832008EA7D6 /* WRSMethodOverriderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WRSMethodOverriderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCBC78651CAC0832008EA7D6 /* WRSMethodOverriderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WRSMethodOverriderTests.m; sourceTree = "<group>"; };
 		FCBC78671CAC0832008EA7D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCBC78701CAC0893008EA7D6 /* WRSMethodOverrider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRSMethodOverrider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				FCBC78591CAC0832008EA7D6 /* WRSMethodOverrider.h */,
+				FCBC78701CAC0893008EA7D6 /* WRSMethodOverrider.m */,
 				FCBC785B1CAC0832008EA7D6 /* Info.plist */,
 			);
 			path = WRSMethodOverrider;
@@ -193,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCBC78711CAC0893008EA7D6 /* WRSMethodOverrider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

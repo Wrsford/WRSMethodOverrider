@@ -7,6 +7,35 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "WRSMethodOverrider.h"
+@interface TestingObj : NSObject
+
+- (NSString*)testString1;
+- (NSString*)testString2;
++ (NSString*)testString1;
++ (NSString*)testString2;
+@end
+
+@implementation TestingObj
+
+- (NSString*)testString1 {
+	return @"TestString 1";
+}
+
+- (NSString*)testString2 {
+	return @"TestString 2";
+}
+
++ (NSString*)testString1 {
+	return @"TestString 1";
+}
+
++ (NSString*)testString2 {
+	return @"TestString 2";
+}
+
+
+@end
 
 @interface WRSMethodOverriderTests : XCTestCase
 
@@ -24,16 +53,41 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testInstanceMethodOverride {
+	[TestingObj overrideSelector:@selector(testString1) withBlock:^NSString*(TestingObj *me) {
+		return [me testString2];
+	}];
+	
+	TestingObj *to = [TestingObj new];
+	
+	XCTAssert([[to testString1] isEqualToString:[to testString2]], "Instance method override failure.");
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testClassMethodOverride {
+	[TestingObj overrideSelector:@selector(testString1) withBlock:^NSString*(TestingObj *me) {
+		return [me testString2];
+	}];
+	
+	XCTAssert([[TestingObj testString1] isEqualToString:[TestingObj testString2]], "Class method override failure.");
 }
+
+- (void)testAbstractionPerformanceLevel0 {
+	[self measureBlock:^{
+		
+	}];
+}
+
+- (void)testAbstractionPerformanceLevel1 {
+	[self measureBlock:^{
+		
+	}];
+}
+
+- (void)testAbstractionPerformanceLevel2 {
+	[self measureBlock:^{
+		
+	}];
+}
+
 
 @end
