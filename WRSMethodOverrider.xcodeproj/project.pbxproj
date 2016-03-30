@@ -11,6 +11,8 @@
 		FCBC78611CAC0832008EA7D6 /* WRSMethodOverrider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCBC78561CAC0832008EA7D6 /* WRSMethodOverrider.framework */; };
 		FCBC78661CAC0832008EA7D6 /* WRSMethodOverriderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBC78651CAC0832008EA7D6 /* WRSMethodOverriderTests.m */; };
 		FCBC78711CAC0893008EA7D6 /* WRSMethodOverrider.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBC78701CAC0893008EA7D6 /* WRSMethodOverrider.m */; };
+		FCBC78741CAC11CB008EA7D6 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FCBC78721CAC11CB008EA7D6 /* LICENSE */; };
+		FCBC78751CAC11CB008EA7D6 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = FCBC78731CAC11CB008EA7D6 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 		FCBC78651CAC0832008EA7D6 /* WRSMethodOverriderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WRSMethodOverriderTests.m; sourceTree = "<group>"; };
 		FCBC78671CAC0832008EA7D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCBC78701CAC0893008EA7D6 /* WRSMethodOverrider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRSMethodOverrider.m; sourceTree = "<group>"; };
+		FCBC78721CAC11CB008EA7D6 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		FCBC78731CAC11CB008EA7D6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 		FCBC78581CAC0832008EA7D6 /* WRSMethodOverrider */ = {
 			isa = PBXGroup;
 			children = (
+				FCBC78721CAC11CB008EA7D6 /* LICENSE */,
+				FCBC78731CAC11CB008EA7D6 /* README.md */,
 				FCBC78591CAC0832008EA7D6 /* WRSMethodOverrider.h */,
 				FCBC78701CAC0893008EA7D6 /* WRSMethodOverrider.m */,
 				FCBC785B1CAC0832008EA7D6 /* Info.plist */,
@@ -179,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCBC78741CAC11CB008EA7D6 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCBC78751CAC11CB008EA7D6 /* README.md in Sources */,
 				FCBC78711CAC0893008EA7D6 /* WRSMethodOverrider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +386,7 @@
 				FCBC786C1CAC0832008EA7D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FCBC786D1CAC0832008EA7D6 /* Build configuration list for PBXNativeTarget "WRSMethodOverriderTests" */ = {
 			isa = XCConfigurationList;
@@ -386,6 +395,7 @@
 				FCBC786F1CAC0832008EA7D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
